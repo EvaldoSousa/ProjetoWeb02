@@ -1,3 +1,8 @@
+html {
+    /* adiciona suavidade ao scrollar */
+    scroll-behavior: smooth;
+}
+
 #nav-btn>div {
     width: 20px;
     height: 4px;
