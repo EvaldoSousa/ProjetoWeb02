@@ -11,14 +11,14 @@ let respostas = document.querySelectorAll('.questao .respostas input');
 
 pular.addEventListener('click', function() {
     passo();
-    duracao = 10;
+    duracao = 25;
 });
 
 respostas.forEach(function(resp) {
     resp.addEventListener('click', function() {
         setTimeout(function() {
             passo();
-            duracao = 10;
+            duracao = 25;
         }, 500);
 
         let valido = this.getAttribute("valido");
@@ -44,13 +44,13 @@ function passo() {
 }
 
 let tempoDuracao = setInterval(function() {
-    if(duracao == 10) {
+    if(duracao == 25) {
         duracao = 0;
     }
     duracao += 1;
     contador.innerHTML = duracao;
 
-    if(contador.innerHTML == "10") {
+    if(contador.innerHTML == "25") {
         passo();
     }
 }, 1000);
