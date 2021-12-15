@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
 html {
     /* adiciona suavidade ao scrollar */
     scroll-behavior: smooth;
@@ -13,6 +16,7 @@ html {
 
 body{
     background: rgb(214, 214, 214) !important;
+    font-family: 'Poppins', sans-serif !important;
     
 }
 
